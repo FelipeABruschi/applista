@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <libprg/libprg.h>
+#include <string.h>
 
-int main(void) {
-    int a = 1, b = 2;
+int main(void)
+{
+    char pessoa[] = "felipe";
 
-    result_t r = compute(a, b, SUM);
-    printf("%d + %d = %8.2f", a, b, r.value);
+    int tamanho = strlen(pessoa);
+
+    for(int i = 0; i < tamanho; i++)
+        printf("%c", pessoa[i]);
+    printf("\n");
 
     return 0;
 }
