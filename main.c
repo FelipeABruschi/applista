@@ -6,7 +6,9 @@
 int main(void)
 {
     Lista_contatos* lista = criar_lista_ctt();
+    Lista_contatos* auxiliar;
     ctt pessoa;
+    ctt* editcontato;
     int opcao;
     
         printf("--------LISTA--DE--CONTATOS---------\n\n");
@@ -35,7 +37,9 @@ int main(void)
             case 3:
                 printf("digite o nome do contato: ");
                 fgets(pessoa.nome, 50, stdin);
-
+                auxiliar = busca_ctt(lista, pessoa.nome);
+                imprimir_ctt(auxiliar);
+                break;
             case 4:
                 printf("digite o nome do contato: ");
                 fgets(pessoa.nome, 50, stdin);
@@ -47,19 +51,37 @@ int main(void)
             case 5:
                 printf("digite o nome do contato: ");
                 fgets(pessoa.nome, 50, stdin);
-                Lista_contatos* editado = busca_ctt(lista, pessoa.nome);
-                if(editado->tamanho == 0)
+                auxiliar = busca_ctt(lista, pessoa.nome);
+                if(auxiliar->tamanho == 0)
                     printf("contato nao esta na lista.\n");
-                else if(editado->tamanho > 1)
+                else if(auxiliar->tamanho > 1)
                 {
-                    imprimir_ctt(editado);
+                    imprimir_ctt(auxiliar);
                     printf("mais de um contato encontrado, forneça o nome completo: ");
                     fgets(pessoa.nome, 50, stdin);
-                    editado = (Lista_contatos *) realloc(editado, sizeof (Lista_contatos));
+                    editcontato = edita_ctt(lista, pessoa.nome);
+                    if(editcontato == NULL)
+                    {
+                        printf("nome incorreto");
+                        free(auxiliar);
+                        exit(1);
+                    }
+                    printf("digite o novo telefone e/ou email: ");
+                    fgets(editcontato->numero, 15, stdin);
+                    fgets(editcontato->email, 50, stdin);
                 }
+                else
+                {
+                    editcontato = edita_ctt(lista, pessoa.nome);
+                    printf("digite o novo telefone e/ou email: ");
+                    fgets(editcontato->numero, 15, stdin);
+                    fgets(editcontato->email, 50, stdin);
+                }
+                break;
+
+            default: printf("opcao invalida.\n");
         }
     }while(opcao != 0);
 
     return 0;
 }
-
