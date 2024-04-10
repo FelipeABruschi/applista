@@ -8,13 +8,13 @@ int main(void)
     ctt pessoa;
 
     int opcao;
-
+    
+        printf("--------LISTA--DE--CONTATOS---------\n");
     do
     {
-        printf("--------LISTA--DE--CONTATOS---------\n");
         printf("ESCOLHA UMA OPCAO:\n");
         printf("(1) adicionar contato\n");
-        printf("(2) imprimir contatos\n");
+        printf("(2) visualizar contatos\n");
         printf("(3) buscar contatos\n");
         printf("(4) excluir contato\n");
         printf("(5) editar contatos\n");
@@ -29,12 +29,27 @@ int main(void)
                 char nome[50];
                 fgets(nome, 50, stdin);
                 int numero = scanf("%d", &numero);
-                char mail[10];
-                scanf("%s\n", mail);
+                char email[10];
+                scanf("%s\n", email);
                 strcpy(pessoa.nome, nome);
                 pessoa.numero = numero;
                 strcpy(pessoa.email, mail);
-                add_contato(lista, pessoa);
+                add_contato(lista, pessoa); break;
+            case 2:
+                imprimir_ctt(lista); break;
+            case 3:
+            case 4:
+                printf("digite o nome do contato: ");
+                fgets(pessoa.nome, 50, stdin);
+                if(excluir_ctt(lista, pessoa.nome) == 0)
+                    printf("contato excluido.\n");
+                else
+                    printf("contato nao existe.\n");
+                break;
+            case 5:
+                printf("digite o nome do contato: ");
+                fgets(pessoa.nome, 50, stdin);
+                buscar_ctt();
         }
 
 
