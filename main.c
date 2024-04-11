@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <libprg/libprg.h>
-#include <string.h>
-#include <stdlib.h>
+#include "menu.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h
 
-int main(void)
+int main()
 {
     Lista_contatos* lista = criar_lista_ctt();
     Lista_contatos* auxiliar;
@@ -11,7 +11,7 @@ int main(void)
     ctt* editcontato;
     int opcao;
     
-        printf("--------LISTA--DE--CONTATOS---------\n\n");
+    printf("--------LISTA--DE--CONTATOS---------\n\n");
     do
     {
         printf("ESCOLHA UMA OPCAO:\n");
@@ -23,26 +23,38 @@ int main(void)
         printf("(0) sair da aplicacao.\n");
 
         scanf("%d: ", &opcao);
-
+        fflush(stdin);
+        
         switch (opcao)
         {
             case 1:
-                printf("digite o nome, telefone e email do contato:\n");
+                printf("digite o nome: ");
                 fgets(pessoa.nome, 50, stdin);
+                fflush(stdin);
+                printf("digite o telefone: ");
                 fgets(pessoa.numero, 15, stdin);
+                fflush(stdin);
+                printf("digite o email: ");
                 fgets(pessoa.email, 50, stdin);
+                fflush(stdin);
                 add_contato(lista, pessoa); break;
             case 2:
-                imprimir_ctt(lista); break;
+                if(lista->tamanho == 0)
+                    printf("LISTA VAZIA.\n\n");
+                else
+                    imprimir_ctt(lista); 
+                break;
             case 3:
                 printf("digite o nome do contato: ");
                 fgets(pessoa.nome, 50, stdin);
+                fflush(stdin);
                 auxiliar = busca_ctt(lista, pessoa.nome);
                 imprimir_ctt(auxiliar);
                 break;
             case 4:
                 printf("digite o nome do contato: ");
                 fgets(pessoa.nome, 50, stdin);
+                fflush(stdin);
                 if(excluir_ctt(lista, pessoa.nome) == 0)
                     printf("contato excluido.\n");
                 else
@@ -51,6 +63,7 @@ int main(void)
             case 5:
                 printf("digite o nome do contato: ");
                 fgets(pessoa.nome, 50, stdin);
+                fflush(stdin);
                 auxiliar = busca_ctt(lista, pessoa.nome);
                 if(auxiliar->tamanho == 0)
                     printf("contato nao esta na lista.\n");
@@ -59,6 +72,7 @@ int main(void)
                     imprimir_ctt(auxiliar);
                     printf("mais de um contato encontrado, forneça o nome completo: ");
                     fgets(pessoa.nome, 50, stdin);
+                    fflush(stdin);
                     editcontato = edita_ctt(lista, pessoa.nome);
                     if(editcontato == NULL)
                     {
@@ -68,20 +82,25 @@ int main(void)
                     }
                     printf("digite o novo telefone e/ou email: ");
                     fgets(editcontato->numero, 15, stdin);
+                    fflush(stdin);
                     fgets(editcontato->email, 50, stdin);
+                    fflush(stdin);
                 }
                 else
                 {
                     editcontato = edita_ctt(lista, pessoa.nome);
                     printf("digite o novo telefone e/ou email: ");
                     fgets(editcontato->numero, 15, stdin);
+                    fflush(stdin);
                     fgets(editcontato->email, 50, stdin);
+                    fflush(stdin);
                 }
                 break;
+            case 0:
 
             default: printf("opcao invalida.\n");
         }
     }while(opcao != 0);
-
+    
     return 0;
 }
