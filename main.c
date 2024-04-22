@@ -13,6 +13,15 @@ void mostrar(Lista_encadeada *lista)
     printf("\n");
 }
 
+void most(Lista_encadeada *lista)
+{
+    no *aux = lista->inicio;
+
+    for(int i = 0; i < lista->tamanho; i++)
+        printf("%d ", (aux + i)->valor);
+    printf("\n");
+}
+
 int main()
 {
     Lista_encadeada mylist;
@@ -23,8 +32,11 @@ int main()
     inserir_no(&mylist, 10);
     inserir_no(&mylist, 11);
     inserir_no(&mylist, 8);
+    inserir_no(&mylist, 2);
 
     mostrar(&mylist);
+
+    most(&mylist);
 
     return 0;
 }
