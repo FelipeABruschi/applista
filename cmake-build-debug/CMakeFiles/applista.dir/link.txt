@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/applista.dir/main.c.o CMakeFiles/applista.dir/ordenar_vetores.c.o "CMakeFiles/applista.dir/_deps/libprg-src/libprg/src/libprg/sum.c.o" "CMakeFiles/applista.dir/_deps/libprg-src/libprg/src/libprg/sub.c.o" "CMakeFiles/applista.dir/_deps/libprg-src/libprg/src/libprg/libprg.c.o" -o applista  _deps/libprg-build/libprg/liblibprg.a 

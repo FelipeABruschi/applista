@@ -16,7 +16,8 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(libprg)
 
-add_executable(applista main.c)
+add_executable(applista main.c
+        ordenar_vetores.c)
 
 # linking libprg
 target_link_libraries(applista PUBLIC libprg)
