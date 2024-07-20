@@ -6,7 +6,7 @@
 
 void preencher_vetor(int *vetor, int tam)
 {
-    srand(time(0));
+    srand(1);
     for(int i = 0; i < tam; i++)
         vetor[i] = rand() % (100 + 1);
 }
@@ -35,12 +35,14 @@ int main()
     gettimeofday(&inicio, 0);
     start = clock();
 
-    selection_sort(vetor, tamanho);
-    print_vetor(vetor, tamanho);
+    //selection_sort(vetor, tamanho);
+    //insertion_sort(vetor, tamanho);
+    bubble_sort_dec(vetor, tamanho);
 
     gettimeofday(&fim, 0);
     end = clock();
 
+    print_vetor(vetor, tamanho);
     long seg = fim.tv_sec - inicio.tv_sec;
     long mseg = fim.tv_usec - inicio.tv_usec;
     double tempo_total = seg + mseg * 1e-6;
