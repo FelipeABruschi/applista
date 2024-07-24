@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include
+C_INCLUDES = -I/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include
 
 C_FLAGS = -g -std=gnu17 -fdiagnostics-color=always
 

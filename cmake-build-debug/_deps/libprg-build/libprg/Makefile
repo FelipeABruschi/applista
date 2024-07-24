@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/284/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /app/extra/clion/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/felipe/CLionProjects/applista
+CMAKE_SOURCE_DIR = /home/aluno/CLionProjects/applista
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/felipe/CLionProjects/applista/cmake-build-debug
+CMAKE_BINARY_DIR = /home/aluno/CLionProjects/applista/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/felipe/CLionProjects/applista/cmake-build-debug
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && /snap/clion/284/bin/cmake/linux/x64/bin/cpack --config ./CPackConfig.cmake
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && /app/extra/clion/bin/cmake/linux/x64/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && /snap/clion/284/bin/cmake/linux/x64/bin/cpack --config ./CPackSourceConfig.cmake /home/felipe/CLionProjects/applista/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && /app/extra/clion/bin/cmake/linux/x64/bin/cpack --config ./CPackSourceConfig.cmake /home/aluno/CLionProjects/applista/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -88,7 +88,7 @@ package_source/fast: package_source
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,7 +98,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -117,49 +117,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg//CMakeFiles/progress.marks
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles 0
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg//CMakeFiles/progress.marks
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/clean
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/preinstall
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/preinstall
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/rule:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/rule
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/rule
 .PHONY : _deps/libprg-build/libprg/CMakeFiles/libprg.dir/rule
 
 # Convenience name for target.
@@ -192,15 +192,39 @@ libprg: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/rule
 
 # fast build rule for target.
 libprg/fast:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build
 .PHONY : libprg/fast
+
+src/libprg/alg_ord_divconq.o: src/libprg/alg_ord_divconq.c.o
+.PHONY : src/libprg/alg_ord_divconq.o
+
+# target to build an object file
+src/libprg/alg_ord_divconq.c.o:
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o
+.PHONY : src/libprg/alg_ord_divconq.c.o
+
+src/libprg/alg_ord_divconq.i: src/libprg/alg_ord_divconq.c.i
+.PHONY : src/libprg/alg_ord_divconq.i
+
+# target to preprocess a source file
+src/libprg/alg_ord_divconq.c.i:
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.i
+.PHONY : src/libprg/alg_ord_divconq.c.i
+
+src/libprg/alg_ord_divconq.s: src/libprg/alg_ord_divconq.c.s
+.PHONY : src/libprg/alg_ord_divconq.s
+
+# target to generate assembly for a file
+src/libprg/alg_ord_divconq.c.s:
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.s
+.PHONY : src/libprg/alg_ord_divconq.c.s
 
 src/libprg/algoritmo_ordenacao.o: src/libprg/algoritmo_ordenacao.c.o
 .PHONY : src/libprg/algoritmo_ordenacao.o
 
 # target to build an object file
 src/libprg/algoritmo_ordenacao.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o
 .PHONY : src/libprg/algoritmo_ordenacao.c.o
 
 src/libprg/algoritmo_ordenacao.i: src/libprg/algoritmo_ordenacao.c.i
@@ -208,7 +232,7 @@ src/libprg/algoritmo_ordenacao.i: src/libprg/algoritmo_ordenacao.c.i
 
 # target to preprocess a source file
 src/libprg/algoritmo_ordenacao.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.i
 .PHONY : src/libprg/algoritmo_ordenacao.c.i
 
 src/libprg/algoritmo_ordenacao.s: src/libprg/algoritmo_ordenacao.c.s
@@ -216,7 +240,7 @@ src/libprg/algoritmo_ordenacao.s: src/libprg/algoritmo_ordenacao.c.s
 
 # target to generate assembly for a file
 src/libprg/algoritmo_ordenacao.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.s
 .PHONY : src/libprg/algoritmo_ordenacao.c.s
 
 src/libprg/fila_circular.o: src/libprg/fila_circular.c.o
@@ -224,7 +248,7 @@ src/libprg/fila_circular.o: src/libprg/fila_circular.c.o
 
 # target to build an object file
 src/libprg/fila_circular.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o
 .PHONY : src/libprg/fila_circular.c.o
 
 src/libprg/fila_circular.i: src/libprg/fila_circular.c.i
@@ -232,7 +256,7 @@ src/libprg/fila_circular.i: src/libprg/fila_circular.c.i
 
 # target to preprocess a source file
 src/libprg/fila_circular.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.i
 .PHONY : src/libprg/fila_circular.c.i
 
 src/libprg/fila_circular.s: src/libprg/fila_circular.c.s
@@ -240,7 +264,7 @@ src/libprg/fila_circular.s: src/libprg/fila_circular.c.s
 
 # target to generate assembly for a file
 src/libprg/fila_circular.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.s
 .PHONY : src/libprg/fila_circular.c.s
 
 src/libprg/libprg.o: src/libprg/libprg.c.o
@@ -248,7 +272,7 @@ src/libprg/libprg.o: src/libprg/libprg.c.o
 
 # target to build an object file
 src/libprg/libprg.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o
 .PHONY : src/libprg/libprg.c.o
 
 src/libprg/libprg.i: src/libprg/libprg.c.i
@@ -256,7 +280,7 @@ src/libprg/libprg.i: src/libprg/libprg.c.i
 
 # target to preprocess a source file
 src/libprg/libprg.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.i
 .PHONY : src/libprg/libprg.c.i
 
 src/libprg/libprg.s: src/libprg/libprg.c.s
@@ -264,7 +288,7 @@ src/libprg/libprg.s: src/libprg/libprg.c.s
 
 # target to generate assembly for a file
 src/libprg/libprg.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.s
 .PHONY : src/libprg/libprg.c.s
 
 src/libprg/lista_contatos.o: src/libprg/lista_contatos.c.o
@@ -272,7 +296,7 @@ src/libprg/lista_contatos.o: src/libprg/lista_contatos.c.o
 
 # target to build an object file
 src/libprg/lista_contatos.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o
 .PHONY : src/libprg/lista_contatos.c.o
 
 src/libprg/lista_contatos.i: src/libprg/lista_contatos.c.i
@@ -280,7 +304,7 @@ src/libprg/lista_contatos.i: src/libprg/lista_contatos.c.i
 
 # target to preprocess a source file
 src/libprg/lista_contatos.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.i
 .PHONY : src/libprg/lista_contatos.c.i
 
 src/libprg/lista_contatos.s: src/libprg/lista_contatos.c.s
@@ -288,7 +312,7 @@ src/libprg/lista_contatos.s: src/libprg/lista_contatos.c.s
 
 # target to generate assembly for a file
 src/libprg/lista_contatos.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.s
 .PHONY : src/libprg/lista_contatos.c.s
 
 src/libprg/lista_encadeada.o: src/libprg/lista_encadeada.c.o
@@ -296,7 +320,7 @@ src/libprg/lista_encadeada.o: src/libprg/lista_encadeada.c.o
 
 # target to build an object file
 src/libprg/lista_encadeada.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o
 .PHONY : src/libprg/lista_encadeada.c.o
 
 src/libprg/lista_encadeada.i: src/libprg/lista_encadeada.c.i
@@ -304,7 +328,7 @@ src/libprg/lista_encadeada.i: src/libprg/lista_encadeada.c.i
 
 # target to preprocess a source file
 src/libprg/lista_encadeada.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.i
 .PHONY : src/libprg/lista_encadeada.c.i
 
 src/libprg/lista_encadeada.s: src/libprg/lista_encadeada.c.s
@@ -312,7 +336,7 @@ src/libprg/lista_encadeada.s: src/libprg/lista_encadeada.c.s
 
 # target to generate assembly for a file
 src/libprg/lista_encadeada.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.s
 .PHONY : src/libprg/lista_encadeada.c.s
 
 src/libprg/lista_linear.o: src/libprg/lista_linear.c.o
@@ -320,7 +344,7 @@ src/libprg/lista_linear.o: src/libprg/lista_linear.c.o
 
 # target to build an object file
 src/libprg/lista_linear.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o
 .PHONY : src/libprg/lista_linear.c.o
 
 src/libprg/lista_linear.i: src/libprg/lista_linear.c.i
@@ -328,7 +352,7 @@ src/libprg/lista_linear.i: src/libprg/lista_linear.c.i
 
 # target to preprocess a source file
 src/libprg/lista_linear.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.i
 .PHONY : src/libprg/lista_linear.c.i
 
 src/libprg/lista_linear.s: src/libprg/lista_linear.c.s
@@ -336,7 +360,7 @@ src/libprg/lista_linear.s: src/libprg/lista_linear.c.s
 
 # target to generate assembly for a file
 src/libprg/lista_linear.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.s
 .PHONY : src/libprg/lista_linear.c.s
 
 src/libprg/pilha.o: src/libprg/pilha.c.o
@@ -344,7 +368,7 @@ src/libprg/pilha.o: src/libprg/pilha.c.o
 
 # target to build an object file
 src/libprg/pilha.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o
 .PHONY : src/libprg/pilha.c.o
 
 src/libprg/pilha.i: src/libprg/pilha.c.i
@@ -352,7 +376,7 @@ src/libprg/pilha.i: src/libprg/pilha.c.i
 
 # target to preprocess a source file
 src/libprg/pilha.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.i
 .PHONY : src/libprg/pilha.c.i
 
 src/libprg/pilha.s: src/libprg/pilha.c.s
@@ -360,7 +384,7 @@ src/libprg/pilha.s: src/libprg/pilha.c.s
 
 # target to generate assembly for a file
 src/libprg/pilha.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.s
 .PHONY : src/libprg/pilha.c.s
 
 src/libprg/sub.o: src/libprg/sub.c.o
@@ -368,7 +392,7 @@ src/libprg/sub.o: src/libprg/sub.c.o
 
 # target to build an object file
 src/libprg/sub.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o
 .PHONY : src/libprg/sub.c.o
 
 src/libprg/sub.i: src/libprg/sub.c.i
@@ -376,7 +400,7 @@ src/libprg/sub.i: src/libprg/sub.c.i
 
 # target to preprocess a source file
 src/libprg/sub.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.i
 .PHONY : src/libprg/sub.c.i
 
 src/libprg/sub.s: src/libprg/sub.c.s
@@ -384,7 +408,7 @@ src/libprg/sub.s: src/libprg/sub.c.s
 
 # target to generate assembly for a file
 src/libprg/sub.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.s
 .PHONY : src/libprg/sub.c.s
 
 src/libprg/sum.o: src/libprg/sum.c.o
@@ -392,7 +416,7 @@ src/libprg/sum.o: src/libprg/sum.c.o
 
 # target to build an object file
 src/libprg/sum.c.o:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o
 .PHONY : src/libprg/sum.c.o
 
 src/libprg/sum.i: src/libprg/sum.c.i
@@ -400,7 +424,7 @@ src/libprg/sum.i: src/libprg/sum.c.i
 
 # target to preprocess a source file
 src/libprg/sum.c.i:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.i
 .PHONY : src/libprg/sum.c.i
 
 src/libprg/sum.s: src/libprg/sum.c.s
@@ -408,7 +432,7 @@ src/libprg/sum.s: src/libprg/sum.c.s
 
 # target to generate assembly for a file
 src/libprg/sum.c.s:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.s
 .PHONY : src/libprg/sum.c.s
 
 # Help Target
@@ -426,6 +450,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... libprg"
+	@echo "... src/libprg/alg_ord_divconq.o"
+	@echo "... src/libprg/alg_ord_divconq.i"
+	@echo "... src/libprg/alg_ord_divconq.s"
 	@echo "... src/libprg/algoritmo_ordenacao.o"
 	@echo "... src/libprg/algoritmo_ordenacao.i"
 	@echo "... src/libprg/algoritmo_ordenacao.s"
@@ -464,6 +491,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

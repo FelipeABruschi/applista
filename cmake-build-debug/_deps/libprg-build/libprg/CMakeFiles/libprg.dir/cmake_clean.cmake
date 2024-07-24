@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o"
+  "CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o.d"
   "CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o"
   "CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o.d"
   "CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o"

@@ -1,4 +1,4 @@
-# Install script for directory: /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg
+# Install script for directory: /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -43,10 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/liblibprg.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/liblibprg.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/CMakeFiles/libprg.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
+  include("/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/CMakeFiles/libprg.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src
+# Install script for directory: /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/cmake_install.cmake")
+  include("/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/cmake_install.cmake")
 endif()
 

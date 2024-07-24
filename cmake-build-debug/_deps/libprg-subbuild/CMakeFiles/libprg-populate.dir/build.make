@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/284/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /app/extra/clion/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild
+CMAKE_SOURCE_DIR = /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild
+CMAKE_BINARY_DIR = /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild
 
 # Utility rule file for libprg-populate.
 
@@ -77,60 +77,60 @@ CMakeFiles/libprg-populate-complete: libprg-populate-prefix/src/libprg-populate-
 CMakeFiles/libprg-populate-complete: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-build
 CMakeFiles/libprg-populate-complete: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-install
 CMakeFiles/libprg-populate-complete: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libprg-populate'"
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E make_directory /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles/libprg-populate-complete
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libprg-populate'"
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E make_directory /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles/libprg-populate-complete
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-done
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update:
 .PHONY : libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-build: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'libprg-populate'"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E echo_append
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'libprg-populate'"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo_append
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-build
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-configure: libprg-populate-prefix/tmp/libprg-populate-cfgcmd.txt
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-configure: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'libprg-populate'"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E echo_append
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'libprg-populate'"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo_append
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-configure
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-download: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-download: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libprg-populate'"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -P /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/tmp/libprg-populate-gitclone.cmake
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libprg-populate'"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -P /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/tmp/libprg-populate-gitclone.cmake
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-download
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-install: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'libprg-populate'"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E echo_append
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'libprg-populate'"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo_append
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-install
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libprg-populate'"
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -Dcfgdir= -P /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/tmp/libprg-populate-mkdirs.cmake
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libprg-populate'"
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -Dcfgdir= -P /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/tmp/libprg-populate-mkdirs.cmake
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-mkdir
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-patch: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-patch-info.txt
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-patch: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libprg-populate'"
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E echo_append
-	/snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libprg-populate'"
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo_append
+	/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-patch
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update:
 .PHONY : libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-test: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'libprg-populate'"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E echo_append
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E touch /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'libprg-populate'"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo_append
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E touch /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-test
 
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update: libprg-populate-prefix/tmp/libprg-populate-gitupdate.cmake
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update-info.txt
 libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-update: libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'libprg-populate'"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src && /snap/clion/284/bin/cmake/linux/x64/bin/cmake -Dcan_fetch=YES -P /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/tmp/libprg-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'libprg-populate'"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -Dcan_fetch=YES -P /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/tmp/libprg-populate-gitupdate.cmake
 
 libprg-populate: CMakeFiles/libprg-populate
 libprg-populate: CMakeFiles/libprg-populate-complete
@@ -154,6 +154,6 @@ CMakeFiles/libprg-populate.dir/clean:
 .PHONY : CMakeFiles/libprg-populate.dir/clean
 
 CMakeFiles/libprg-populate.dir/depend:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles/libprg-populate.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/CMakeFiles/libprg-populate.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/libprg-populate.dir/depend
 

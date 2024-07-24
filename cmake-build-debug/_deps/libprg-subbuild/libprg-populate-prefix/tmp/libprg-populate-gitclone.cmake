@@ -3,21 +3,21 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-if(EXISTS "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt" AND EXISTS "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt" AND
-  "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt" IS_NEWER_THAN "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt")
+if(EXISTS "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt" AND EXISTS "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt" AND
+  "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt" IS_NEWER_THAN "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt")
   message(STATUS
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt'"
+    "'/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt'"
   )
   return()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src'")
+  message(FATAL_ERROR "Failed to remove directory: '/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -27,7 +27,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/FelipeABruschi/libprg.git" "libprg-src"
-    WORKING_DIRECTORY "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps"
+    WORKING_DIRECTORY "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps"
     RESULT_VARIABLE error_code
   )
   math(EXPR number_of_tries "${number_of_tries} + 1")
@@ -42,7 +42,7 @@ endif()
 execute_process(
   COMMAND "/usr/bin/git"
           checkout "origin/main" --
-  WORKING_DIRECTORY "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
+  WORKING_DIRECTORY "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
@@ -54,20 +54,20 @@ if(init_submodules)
   execute_process(
     COMMAND "/usr/bin/git" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
+    WORKING_DIRECTORY "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
     RESULT_VARIABLE error_code
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src'")
+  message(FATAL_ERROR "Failed to update submodules in: '/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt" "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitinfo.txt" "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-subbuild/libprg-populate-prefix/src/libprg-populate-stamp/libprg-populate-gitclone-lastrun.txt'")
 endif()

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/284/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /app/extra/clion/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/284/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/felipe/CLionProjects/applista
+CMAKE_SOURCE_DIR = /home/aluno/CLionProjects/applista
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/felipe/CLionProjects/applista/cmake-build-debug
+CMAKE_BINARY_DIR = /home/aluno/CLionProjects/applista/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include _deps/libprg-build/libprg/CMakeFiles/libprg.dir/depend.make
@@ -72,128 +72,142 @@ include _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o: _deps/libprg-src/libprg/src/libprg/lista_linear.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o -MF CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o.d -o CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o -MF CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o.d -o CMakeFiles/libprg.dir/src/libprg/lista_linear.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/lista_linear.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c > CMakeFiles/libprg.dir/src/libprg/lista_linear.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c > CMakeFiles/libprg.dir/src/libprg/lista_linear.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_linear.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/lista_linear.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c -o CMakeFiles/libprg.dir/src/libprg/lista_linear.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c -o CMakeFiles/libprg.dir/src/libprg/lista_linear.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o: _deps/libprg-src/libprg/src/libprg/fila_circular.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o -MF CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o.d -o CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o -MF CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o.d -o CMakeFiles/libprg.dir/src/libprg/fila_circular.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/fila_circular.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c > CMakeFiles/libprg.dir/src/libprg/fila_circular.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c > CMakeFiles/libprg.dir/src/libprg/fila_circular.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/fila_circular.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/fila_circular.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c -o CMakeFiles/libprg.dir/src/libprg/fila_circular.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c -o CMakeFiles/libprg.dir/src/libprg/fila_circular.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o: _deps/libprg-src/libprg/src/libprg/pilha.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o -MF CMakeFiles/libprg.dir/src/libprg/pilha.c.o.d -o CMakeFiles/libprg.dir/src/libprg/pilha.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.o -MF CMakeFiles/libprg.dir/src/libprg/pilha.c.o.d -o CMakeFiles/libprg.dir/src/libprg/pilha.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/pilha.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c > CMakeFiles/libprg.dir/src/libprg/pilha.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c > CMakeFiles/libprg.dir/src/libprg/pilha.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/pilha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/pilha.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c -o CMakeFiles/libprg.dir/src/libprg/pilha.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c -o CMakeFiles/libprg.dir/src/libprg/pilha.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o: _deps/libprg-src/libprg/src/libprg/lista_contatos.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o -MF CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o.d -o CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o -MF CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o.d -o CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c > CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c > CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c -o CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c -o CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o: _deps/libprg-src/libprg/src/libprg/lista_encadeada.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o -MF CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o.d -o CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o -MF CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o.d -o CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c > CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c > CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c -o CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c -o CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o: _deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o -MF CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o.d -o CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o -MF CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o.d -o CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c > CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c > CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c -o CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c -o CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.s
+
+_deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
+_deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o: _deps/libprg-src/libprg/src/libprg/alg_ord_divconq.c
+_deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o -MF CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o.d -o CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/alg_ord_divconq.c
+
+_deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.i"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/alg_ord_divconq.c > CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.i
+
+_deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.s"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/alg_ord_divconq.c -o CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o: _deps/libprg-src/libprg/src/libprg/sum.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o -MF CMakeFiles/libprg.dir/src/libprg/sum.c.o.d -o CMakeFiles/libprg.dir/src/libprg/sum.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o -MF CMakeFiles/libprg.dir/src/libprg/sum.c.o.d -o CMakeFiles/libprg.dir/src/libprg/sum.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/sum.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c > CMakeFiles/libprg.dir/src/libprg/sum.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c > CMakeFiles/libprg.dir/src/libprg/sum.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/sum.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c -o CMakeFiles/libprg.dir/src/libprg/sum.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c -o CMakeFiles/libprg.dir/src/libprg/sum.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o: _deps/libprg-src/libprg/src/libprg/sub.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o -MF CMakeFiles/libprg.dir/src/libprg/sub.c.o.d -o CMakeFiles/libprg.dir/src/libprg/sub.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o -MF CMakeFiles/libprg.dir/src/libprg/sub.c.o.d -o CMakeFiles/libprg.dir/src/libprg/sub.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/sub.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c > CMakeFiles/libprg.dir/src/libprg/sub.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c > CMakeFiles/libprg.dir/src/libprg/sub.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/sub.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c -o CMakeFiles/libprg.dir/src/libprg/sub.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c -o CMakeFiles/libprg.dir/src/libprg/sub.c.s
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/flags.make
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o: _deps/libprg-src/libprg/src/libprg/libprg.c
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o -MF CMakeFiles/libprg.dir/src/libprg/libprg.c.o.d -o CMakeFiles/libprg.dir/src/libprg/libprg.c.o -c /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o -MF CMakeFiles/libprg.dir/src/libprg/libprg.c.o.d -o CMakeFiles/libprg.dir/src/libprg/libprg.c.o -c /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libprg.dir/src/libprg/libprg.c.i"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c > CMakeFiles/libprg.dir/src/libprg/libprg.c.i
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c > CMakeFiles/libprg.dir/src/libprg/libprg.c.i
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libprg.dir/src/libprg/libprg.c.s"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c -o CMakeFiles/libprg.dir/src/libprg/libprg.c.s
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c -o CMakeFiles/libprg.dir/src/libprg/libprg.c.s
 
 # Object files for target libprg
 libprg_OBJECTS = \
@@ -203,6 +217,7 @@ libprg_OBJECTS = \
 "CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o" \
 "CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o" \
 "CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o" \
+"CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o" \
 "CMakeFiles/libprg.dir/src/libprg/sum.c.o" \
 "CMakeFiles/libprg.dir/src/libprg/sub.c.o" \
 "CMakeFiles/libprg.dir/src/libprg/libprg.c.o"
@@ -216,24 +231,25 @@ _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libp
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_encadeada.c.o
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/algoritmo_ordenacao.c.o
+_deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/alg_ord_divconq.c.o
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sum.c.o
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/sub.c.o
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/libprg.c.o
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build.make
 _deps/libprg-build/libprg/liblibprg.a: _deps/libprg-build/libprg/CMakeFiles/libprg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/felipe/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library liblibprg.a"
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && $(CMAKE_COMMAND) -P CMakeFiles/libprg.dir/cmake_clean_target.cmake
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libprg.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aluno/CLionProjects/applista/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library liblibprg.a"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && $(CMAKE_COMMAND) -P CMakeFiles/libprg.dir/cmake_clean_target.cmake
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libprg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build: _deps/libprg-build/libprg/liblibprg.a
 .PHONY : _deps/libprg-build/libprg/CMakeFiles/libprg.dir/build
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/clean:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && $(CMAKE_COMMAND) -P CMakeFiles/libprg.dir/cmake_clean.cmake
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg && $(CMAKE_COMMAND) -P CMakeFiles/libprg.dir/cmake_clean.cmake
 .PHONY : _deps/libprg-build/libprg/CMakeFiles/libprg.dir/clean
 
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/depend:
-	cd /home/felipe/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/felipe/CLionProjects/applista /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg /home/felipe/CLionProjects/applista/cmake-build-debug /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/CMakeFiles/libprg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aluno/CLionProjects/applista/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aluno/CLionProjects/applista /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg /home/aluno/CLionProjects/applista/cmake-build-debug /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/CMakeFiles/libprg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/libprg-build/libprg/CMakeFiles/libprg.dir/depend
 

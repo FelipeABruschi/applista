@@ -19,17 +19,17 @@ project(libprg-populate NONE)
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
 set(GIT_EXECUTABLE [==[/usr/bin/git]==])
-set(GIT_VERSION_STRING [==[2.43.0]==])
+set(GIT_VERSION_STRING [==[2.45.2]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[/usr/bin/git;2.43.0]==]
+  [==[/usr/bin/git;2.45.2]==]
 )
 
 
 include(ExternalProject)
 ExternalProject_Add(libprg-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/FelipeABruschi/libprg.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "origin/main"
-                    SOURCE_DIR          "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
-                    BINARY_DIR          "/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build"
+                    SOURCE_DIR          "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src"
+                    BINARY_DIR          "/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

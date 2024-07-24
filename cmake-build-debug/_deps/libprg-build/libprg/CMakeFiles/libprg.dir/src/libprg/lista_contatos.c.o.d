@@ -1,8 +1,9 @@
 _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o: \
- /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c \
+ /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c \
  /usr/include/stdc-predef.h \
- /home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include/libprg/libprg.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h /usr/include/stdlib.h \
+ /home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include/libprg/libprg.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
+ /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -11,7 +12,7 @@ _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -42,7 +43,7 @@ _deps/libprg-build/libprg/CMakeFiles/libprg.dir/src/libprg/lista_contatos.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \

@@ -8,90 +8,93 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\libprg-src\;CMake Files\cmake-build-debug\_deps\libprg-src\libprg\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build"/>
+				<Option working_dir="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libprg">
-				<Option output="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/liblibprg.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg"/>
+				<Option output="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/liblibprg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
-					<Add directory="/usr/local/include"/>
+					<Add directory="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 libprg"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 libprg"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libprg/fast">
-				<Option output="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/liblibprg.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg"/>
+				<Option output="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/liblibprg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
-					<Add directory="/usr/local/include"/>
+					<Add directory="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 libprg/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 libprg/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-build/libprg/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/alg_ord_divconq.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/algoritmo_ordenacao.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/fila_circular.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/libprg.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_contatos.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_encadeada.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/lista_linear.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/pilha.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sub.c">
 			<Option target="libprg"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/CMakeLists.txt">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/src/libprg/sum.c">
+			<Option target="libprg"/>
+		</Unit>
+		<Unit filename="/home/aluno/CLionProjects/applista/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/CMakeLists.txt">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\libprg-src\"/>
 		</Unit>
-		<Unit filename="/home/felipe/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/CMakeLists.txt">
+		<Unit filename="/home/aluno/CLionProjects/applista/cmake-build-debug/_deps/libprg-src/libprg/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\libprg-src\libprg\"/>
 		</Unit>
 	</Project>
